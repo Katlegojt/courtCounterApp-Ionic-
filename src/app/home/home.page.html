@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>
+      Court Counter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row >
+    <ion-col>
+      Team A<br>
+      <ion-textarea>{{scoreA}}</ion-textarea>
+    </ion-col>
+    <ion-col>
+      Team B<br>
+      <ion-textarea>{{scoreB}}</ion-textarea>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <br>
+      <ion-button color="warning" (click)="setOneA()">+1</ion-button>
+      <ion-button color="warning" (click)="minusOneA()">-1</ion-button>
+      <br>
+      <ion-button color="warning" (click)="setTwoA()">+2</ion-button>
+      <ion-button color="warning" (click)="minusTwoA()">-2</ion-button>
+      <br>
+      <ion-button color="warning" (click)="setThreeA()">+3</ion-button>
+      <ion-button color="warning" (click)="minusThreeA()">-3</ion-button>
+      <br>
+      <ion-button color="warning" (click)="setFourA()">+4</ion-button>
+      <ion-button color="warning" (click)="minusFourA()">-4</ion-button>
+    </ion-col>
+
+    <ion-col>
+
+      <br>
+      <ion-button color="warning" (click)="setOneB()">+1</ion-button>
+      <ion-button  color="warning"(click)="minusOneB()">-1</ion-button>
+      <br>
+      <ion-button color="warning" (click)="setTwoB()">+2</ion-button>
+      <ion-button color="warning" (click)="minusTwoB()" >-2</ion-button>
+      <br>
+      <ion-button color="warning"(click)="setThreeB()">+3</ion-button>
+      <ion-button color="warning" (click)="minusThreeB()">-3</ion-button>
+      <br>
+      <ion-button color="warning" (click)="setFourB()">+4</ion-button>
+      <ion-button color="warning" (click)="minusFourB()">-4</ion-button>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+     
+      <br>
+      <ion-button color="warning" (click)="reset()">Reset</ion-button>
+      <br>
+      
+    </ion-col>
+  </ion-row>
+
+</ion-content>
