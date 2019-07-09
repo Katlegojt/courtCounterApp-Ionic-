@@ -9,11 +9,12 @@ export class HomePage {
 
   scoreA = 0;
   scoreB = 0;
+  
   constructor() { }
 
   setOneB() {
     this.scoreB += 1;
-    return this.scoreB;
+   
   }
 
   setTwoB() {
@@ -46,7 +47,7 @@ export class HomePage {
 
     this.scoreA += 4;
   }
-
+//////////////////////////////////////////////////////
   minusOneA() {
 
     this.scoreA -= 1;

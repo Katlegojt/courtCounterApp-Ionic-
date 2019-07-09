@@ -7,6 +7,7 @@
 </ion-header>
 
 <ion-content>
+    <ion-grid>
   <ion-row >
     <ion-col>
       Team A<br>
@@ -16,7 +17,6 @@
       Team B<br>
       <ion-textarea>{{scoreB}}</ion-textarea>
     </ion-col>
-
   </ion-row>
 
   <ion-row>
@@ -62,5 +62,23 @@
       
     </ion-col>
   </ion-row>
+    </ion-grid>
+
+    <!-- <ng-container *ngIf="scoreA == scoreB message1 " >
+    </ng-container>    
+         
+    <ng-container *ngIf="scoreA > scoreB else message">
+<h1> Team A is winning</h1>
+    </ng-container>
+
+    <ng-template #message>
+      <h1> Team B is winning</h1>
+    </ng-template>
+    <ng-template #message1>
+        <h1> scores level</h1>
+      </ng-template> -->
+
+ 
+  
 
 </ion-content>
