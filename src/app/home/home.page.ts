@@ -9,81 +9,29 @@ export class HomePage {
 
   scoreA = 0;
   scoreB = 0;
+  plusOne :number;
   
   constructor() { }
+  setTeamA(num:number)
+  {
 
-  setOneB() {
-    this.scoreB += 1;
-   
+    this.scoreA += num;
   }
 
-  setTwoB() {
-    this.scoreB += 2;
+  setTeamB(num:number) {
+    this.scoreB += num;
   }
 
-  setThreeB() {
-    this.scoreB += 3;
+  minusTeamA(num:number){
+
+    this.scoreA -= num
+  }
+  minusTeamB(num:number){
+
+    this.scoreB -= num
   }
 
-  setFourB() {
-
-    this.scoreB += 4;
-  }
-
-  setOneA() {
-    this.scoreA += 1;
-
-  }
-
-  setTwoA() {
-    this.scoreA += 2;
-  }
-
-  setThreeA() {
-    this.scoreA += 3;
-  }
-
-  setFourA() {
-
-    this.scoreA += 4;
-  }
-//////////////////////////////////////////////////////
-  minusOneA() {
-
-    this.scoreA -= 1;
-  }
-
-  minusTwoA() {
-
-    this.scoreA -= 2;
-  }
-  minusThreeA() {
-
-    this.scoreA -= 3;
-  }
-  minusFourA() {
-
-    this.scoreA -= 4;
-  }
-
-  minusOneB() {
-
-    this.scoreB -= 1;
-  }
-
-  minusTwoB() {
-
-    this.scoreB -= 2;
-  }
-  minusThreeB() {
-
-    this.scoreB -= 3;
-  }
-  minusFourB() {
-
-    this.scoreB -= 4;
-  }
-
+  
   reset() {
 
     this.scoreB = 0;
