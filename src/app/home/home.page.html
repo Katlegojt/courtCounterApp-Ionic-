@@ -10,19 +10,24 @@
     <ion-grid>
   <ion-row >
     <ion-col>
-      Team A<br>
-      <ion-textarea>{{scoreA}}</ion-textarea>
+      <br>
+     <h1>Team A</h1> 
+      <br>
+      
+      <ion-textarea><h2>{{scoreA}}</h2></ion-textarea>
     </ion-col>
     <ion-col>
-      Team B<br>
-      <ion-textarea>{{scoreB}}</ion-textarea>
+      <br>
+     <h1>Team B</h1> 
+      <br>
+      
+      <ion-textarea><h2>{{scoreB}}</h2></ion-textarea>
     </ion-col>
   </ion-row>
 
   <ion-row>
     <ion-col>
-      <br>
-      <ion-button color="warning" (click)="setTeamA(4)"><p>+4</p></ion-button>
+      <ion-button color="warning" (click)="setTeamA(4)">+4</ion-button>
       <ion-button color="warning" (click)="minusTeamA(4)">-4</ion-button>
       <br>
       <ion-button color="warning" (click)="setTeamA(3)">+3</ion-button>
@@ -37,7 +42,6 @@
 
     <ion-col>
 
-      <br>
       <ion-button color="warning" (click)="setTeamB(4)">+4</ion-button>
       <ion-button  color="warning"(click)="minusTeamB(4)">-4</ion-button>
       <br>
@@ -55,7 +59,8 @@
 
   <ion-row>
     <ion-col>
-     
+     <br>
+     <br>
       <br>
       <ion-button color="warning" (click)="reset()">Reset</ion-button>
       <br>
