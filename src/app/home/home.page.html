@@ -7,69 +7,70 @@
 </ion-header>
 
 <ion-content>
-    <ion-grid>
-  <ion-row >
-    <ion-col>
-      <br>
-     <h1>Team A</h1> 
-      <br>
-      
-      <ion-textarea><h2>{{scoreA}}</h2></ion-textarea>
-    </ion-col>
-    <ion-col>
-      <br>
-     <h1>Team B</h1> 
-      <br>
-      
-      <ion-textarea><h2>{{scoreB}}</h2></ion-textarea>
-    </ion-col>
-  </ion-row>
+  
+    
+      <ion-grid>
 
-  <ion-row>
-    <ion-col>
-      <ion-button color="warning" (click)="setTeamA(4)">+4</ion-button>
-      <ion-button color="warning" (click)="minusTeamA(4)">-4</ion-button>
-      <br>
-      <ion-button color="warning" (click)="setTeamA(3)">+3</ion-button>
-      <ion-button color="warning" (click)="minusTeamA(3)">-3</ion-button>
-      <br>
-      <ion-button color="warning" (click)="setTeamA(2)">+2</ion-button>
-      <ion-button color="warning" (click)="minusTeamA(2)">-2</ion-button>
-      <br>
-      <ion-button color="warning" (click)="setTeamA(1)">+1</ion-button>
-      <ion-button color="warning" (click)="minusTeamA(1)">-1</ion-button>
-    </ion-col>
+        <ion-row>
+        
+            <ion-col align-self: center>
 
-    <ion-col>
+              <h1>Team A</h1>
+              <br>
 
-      <ion-button color="warning" (click)="setTeamB(4)">+4</ion-button>
-      <ion-button  color="warning"(click)="minusTeamB(4)">-4</ion-button>
-      <br>
-      <ion-button color="warning" (click)="setTeamB(3)">+3</ion-button>
-      <ion-button color="warning" (click)="minusTeamB(3)" >-3</ion-button>
-      <br>
-      <ion-button color="warning"(click)="setTeamB(2)">+2</ion-button>
-      <ion-button color="warning" (click)="minusTeamB(2)">-2</ion-button>
-      <br>
-      <ion-button color="warning" (click)="setTeamB(1)">+1</ion-button>
-      <ion-button color="warning" (click)="minusTeamB(1)">-1</ion-button>
-    </ion-col>
+              <ion-textarea>
+                <h2>{{scoreA}}</h2>
+              </ion-textarea>
+              <ion-button color="warning"  (click)="setTeamA(4)">+4</ion-button>
+              <ion-button color="warning" [disabled]=" isVaildA" (click)="minusTeamA(4)">-4</ion-button>
+              <br>
+              <ion-button color="warning" (click)="setTeamA(3)">+3</ion-button>
+              <ion-button color="warning"  [disabled]=" isVaildA" (click)="minusTeamA(3)">-3</ion-button>
+              <br>
+              <ion-button color="warning" (click)="setTeamA(2)">+2</ion-button>
+              <ion-button color="warning" [disabled]=" isVaildA" (click)="minusTeamA(2)">-2</ion-button>
+              <br>
+              <ion-button color="warning" (click)="setTeamA(1)">+1</ion-button>
+              <ion-button color="warning" [disabled]=" isVaildA" (click)="minusTeamA(1)">-1</ion-button>
+            </ion-col>
+          
+<div class="divider"></div>
+          
+            <ion-col align-self: center>
+              <h1>Team B</h1>
+              <br>
 
-  </ion-row>
+              <ion-textarea>
+                <h2>{{scoreB}}</h2>
+              </ion-textarea>
+              <ion-button color="warning" (click)="setTeamB(4)">+4</ion-button>
+              <ion-button color="warning"  [disabled]=" isVaildB" (click)="minusTeamB(4)">-4</ion-button>
+              <br>
+              <ion-button color="warning" (click)="setTeamB(3)">+3</ion-button>
+              <ion-button color="warning" [disabled]=" isVaildB" (click)="minusTeamB(3)">-3</ion-button>
+              <br>
+              <ion-button color="warning" (click)="setTeamB(2)">+2</ion-button>
+              <ion-button color="warning"  [disabled]=" isVaildB"  (click)="minusTeamB(2)">-2</ion-button>
+              <br>
+              <ion-button color="warning" (click)="setTeamB(1)">+1</ion-button>
+              <ion-button color="warning"  [disabled]=" isVaildB" (click)="minusTeamB(1)">-1</ion-button>
+            </ion-col>
+       
+        </ion-row>
+        
+        <ion-row>
+          <ion-col align-self: center>
+            <br>
+            <br>
+            <br>
+            <ion-button color="warning" (click)="reset()">Reset</ion-button>
+            <br>
 
-  <ion-row>
-    <ion-col>
-     <br>
-     <br>
-      <br>
-      <ion-button color="warning" (click)="reset()">Reset</ion-button>
-      <br>
-      
-    </ion-col>
-  </ion-row>
-    </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-    <!-- <ng-container *ngIf="scoreA == scoreB message1 " >
+      <!-- <ng-container *ngIf="scoreA == scoreB message1 " >
     </ng-container>    
          
     <ng-container *ngIf="scoreA > scoreB else message">
@@ -83,7 +84,6 @@
         <h1> scores level</h1>
       </ng-template> -->
 
- 
-  
+    
 
 </ion-content>

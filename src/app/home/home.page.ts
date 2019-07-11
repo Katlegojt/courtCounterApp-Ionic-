@@ -10,25 +10,78 @@ export class HomePage {
   scoreA = 0;
   scoreB = 0;
   plusOne :number;
-  
-  constructor() { }
+  isVaildA : boolean = false;
+  isVaildB : boolean = false;
+  constructor() {
+    if(this.scoreA <= 0)
+{
+ this.isVaildA = true;
+ 
+}else{
+
+  this.isVaildA = false;
+}
+if(this.scoreB <= 0)
+{
+ this.isVaildB = true;
+
+}else{
+
+  this.isVaildB = false;
+}
+
+   }
   setTeamA(num:number)
   {
 
     this.scoreA += num;
+    if(this.scoreA <= 0)
+    {
+     this.isVaildA = true;
+     this.scoreA = 0;
+    
+    }else{
+    
+      this.isVaildA = false;
+    }
   }
 
   setTeamB(num:number) {
     this.scoreB += num;
+    if(this.scoreB <= 0)
+    {
+     this.isVaildB = true;
+     this.scoreB = 0;
+    
+    }else{
+    
+      this.isVaildB = false;
+    }
   }
 
   minusTeamA(num:number){
 
-    this.scoreA -= num
+    this.scoreA -= num;
+    if(this.scoreA <= 0)
+    {
+     this.isVaildA = true;
+    this.scoreA = 0;
+    }else{
+    
+      this.isVaildA = false;
+    }
   }
   minusTeamB(num:number){
 
-    this.scoreB -= num
+    this.scoreB -= num;
+    if(this.scoreB <= 0)
+    {
+     this.isVaildB = true;
+     this.scoreB = 0;
+    }else{
+    
+      this.isVaildB = false;
+    }
   }
 
   
@@ -36,7 +89,26 @@ export class HomePage {
 
     this.scoreB = 0;
     this.scoreA = 0;
+    if(this.scoreA <= 0)
+{
+ this.isVaildA = true;
 
+}else{
+
+  this.isVaildA = false;
+}
+
+if(this.scoreB <= 0)
+{
+ this.isVaildB = true;
+
+}else{
+
+  this.isVaildB = false;
+}
   }
+
+
+  
 
 }
